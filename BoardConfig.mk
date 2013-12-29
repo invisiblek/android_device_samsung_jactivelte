@@ -24,13 +24,10 @@
 -include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/jfltei337/BoardConfigVendor.mk
+-include vendor/samsung/jactivelte/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := jflteatt
+TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx
 
 # Kernel
-TARGET_KERNEL_CONFIG         := jf_att_defconfig
-
-# loki
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/msm8960-common/loki
+TARGET_KERNEL_CONFIG         := jactive_att_defconfig

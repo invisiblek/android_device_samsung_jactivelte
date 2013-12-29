@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/jflteatt/full_jflteatt.mk)
+$(call inherit-product, device/samsung/jactivelte/full_jactivelte.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
@@ -6,8 +6,11 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jflteuc TARGET_DEVICE=jflteatt BUILD_FINGERPRINT="samsung/jflteuc/jflteatt:4.2.2/JDQ39/I337UCUAMDL:user/release-keys" PRIVATE_BUILD_DESC="jflteuc-user 4.2.2 JDQ39 I337UCUAMDL release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRODUCT_NAME=jactiveltexx \
+	TARGET_DEVICE=jactivelte \
+	BUILD_FINGERPRINT="samsung/jactiveltexx/jactivelte:4.2.2/JDQ39/I9295XXUBMK3:user/release-keys" \
+	PRIVATE_BUILD_DESC="jactiveltexx-user 4.2.2 JDQ39 I9295XXUBMK3 release-keys"
 
-PRODUCT_NAME := cm_jflteatt
-PRODUCT_DEVICE := jflteatt
-
+PRODUCT_NAME := cm_jactivelte
+PRODUCT_DEVICE := jactivelte
